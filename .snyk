@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.14.1
+version: v1.25.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:ejs:20161130':
@@ -676,4 +676,10 @@ ignore:
     - tap > nyc > yargs > y18n:
         reason: 'Could be breaking changes: review separately'
         expires: '2021-03-07T11:49:36.888Z'
-patch: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - dustjs-linkedin > cli > glob > minimatch:
+        patched: '2026-02-02T23:54:53.481Z'
+        id: 'npm:minimatch:20160620'
+        path: dustjs-linkedin > cli > glob > minimatch
