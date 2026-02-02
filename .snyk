@@ -680,6 +680,6 @@ ignore:
 patch:
   'npm:minimatch:20160620':
     - dustjs-linkedin > cli > glob > minimatch:
-        patched: '2026-02-02T10:28:32.904Z'
+        patched: '2026-02-02T23:54:53.481Z'
         id: 'npm:minimatch:20160620'
         path: dustjs-linkedin > cli > glob > minimatch
